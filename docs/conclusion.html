@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<title>一页结论 · 白酒财报问答</title>
+<style>
+  @page { size: A4; margin: 0; }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; background: #fff; }
+  body { font-family: "Microsoft YaHei", "PingFang SC", sans-serif; color: #1b1a17; }
+  .page {
+    width: 210mm; height: 297mm; padding: 13mm 14mm 9mm;
+    background:
+      radial-gradient(120mm 70mm at 100% 0%, rgba(184,64,43,.10), transparent 70%),
+      radial-gradient(100mm 80mm at 0% 100%, rgba(47,92,79,.10), transparent 70%),
+      #f7f3ea;
+    position: relative; overflow: hidden;
+  }
+  header { border-bottom: 1.5px solid #1b1a17; padding-bottom: 4mm; }
+  .eyebrow { font-family: Consolas, monospace; font-size: 6.6pt; letter-spacing: .22em; color: #b8402b; }
+  h1 { margin: 2.2mm 0 1.2mm; font-family: "Songti SC", "SimSun", serif; font-weight: 500; font-size: 24pt; line-height: 1.12; letter-spacing: -.02em; }
+  h1 em { font-style: normal; color: #b8402b; }
+  .sub { margin: 0; font-size: 8pt; color: #625c50; letter-spacing: .02em; }
+  .stats { display: flex; gap: 7mm; margin-top: 3.2mm; }
+  .stat b { display: block; font-family: "Songti SC", serif; font-size: 18pt; line-height: 1; font-weight: 600; }
+  .stat span { display: block; font-size: 6.4pt; color: #8b8578; margin-top: 1mm; letter-spacing: .05em; }
+  .cols { column-count: 2; column-gap: 8mm; margin-top: 4mm; }
+  section { break-inside: avoid; margin-bottom: 4.2mm; }
+  h2 { margin: 0 0 1.6mm; font-family: "Songti SC", serif; font-size: 11.5pt; font-weight: 600; color: #1b1a17; }
+  h2 span { font-family: Consolas, monospace; font-size: 6pt; color: #b8402b; letter-spacing: .1em; margin-right: 2mm; }
+  p { margin: 0 0 1.4mm; font-size: 7.55pt; line-height: 1.62; color: #3f3b33; }
+  ul { margin: 0; padding-left: 3.4mm; }
+  li { font-size: 7.45pt; line-height: 1.58; color: #3f3b33; margin-bottom: .9mm; }
+  li::marker { color: #b8402b; }
+  b { color: #1b1a17; }
+  .accent { color: #b8402b; }
+  .jade { color: #2f5c4f; }
+  .callout {
+    background: #1b1f1d; color: #f7f2e8; padding: 2.6mm 3mm; border-radius: 1.2mm;
+    font-family: "Songti SC", serif; font-size: 8.4pt; line-height: 1.5; margin-top: 1.5mm;
+  }
+  .callout b { color: #f0c9b8; }
+  table { width: 100%; border-collapse: collapse; font-size: 6.9pt; margin-top: 1mm; }
+  th { text-align: left; font-weight: 600; color: #8b8578; border-bottom: 1px solid #cfc5b2; padding: 1.1mm 1mm; }
+  td { border-bottom: .5px solid #ded6c6; padding: 1.1mm 1mm; vertical-align: top; line-height: 1.42; }
+  td:first-child { width: 33%; color: #1b1a17; font-weight: 600; }
+  .tag { display: inline-block; font-family: Consolas, monospace; font-size: 5.8pt; padding: .3mm 1mm; border-radius: .6mm; background: #e6ebe4; color: #2f5c4f; margin-right: 1mm; }
+  .tag.red { background: #f5e4df; color: #b8402b; }
+  footer {
+    position: absolute; left: 14mm; right: 14mm; bottom: 7mm;
+    border-top: .8px solid #cfc5b2; padding-top: 1.8mm;
+    display: flex; justify-content: space-between; gap: 5mm;
+    font-family: Consolas, monospace; font-size: 5.9pt; color: #8b8578; letter-spacing: .02em;
+  }
+  .small { font-size: 6.8pt; color: #6f6a5f; line-height: 1.55; }
+  .results { margin-top: 1.5mm; border-top: 1px solid #cfc5b2; padding-top: 2.2mm; }
+  .results h2 { font-size: 9.5pt; margin-bottom: 1.4mm; }
+  .rgrid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 1.4mm; }
+  .r { background: rgba(255,255,255,.55); border: .5px solid #ded6c6; border-radius: .8mm; padding: 1.4mm 1.6mm; }
+  .r b { display: block; font-size: 6.6pt; margin-bottom: .6mm; }
+  .r span { font-size: 5.9pt; color: #6f6a5f; line-height: 1.35; display: block; }
+  .r em { font-style: normal; font-family: Consolas, monospace; font-size: 5.6pt; color: #2f5c4f; }
+  .r.warn em { color: #b8402b; }
+</style>
+</head>
+<body>
+<div class="page">
+  <header>
+    <div class="eyebrow">WEEK 03 · DIRECTION A · 一页结论</div>
+    <h1>同一批财报，<em>什么问题该建库？</em></h1>
+    <p class="sub">12 家白酒上市公司 · 2024 年年报 · 2,186 页 · 3,229 文本块 + 3,614 表格块 · 10 题实测</p>
+    <div class="stats">
+      <div class="stat"><b>12</b><span>家公司 / 同一行业</span></div>
+      <div class="stat"><b>6,843</b><span>带页码的检索块</span></div>
+      <div class="stat"><b>10/10</b><span>数值题答对</span></div>
+      <div class="stat"><b>7/8</b><span>单公司题金标准页进 top-12</span></div>
+    </div>
+  </header>
+
+  <div class="cols">
+    <section>
+      <h2><span>01</span>做法：两路检索，一条表格通道</h2>
+      <p>巨潮资讯下载 12 份 2024 年报全文 → PyMuPDF 按页抽文字与有框线表格 → 表格还原成「表头 + 行列」→ 每块带公司、章节、页码，表格块带表题 → BM25 + 256 维 LSA 向量（字符 2–4 gram TF-IDF → SVD）→ RRF 融合（0.45 / 0.55）。</p>
+      <p>问题含多家公司时，先逐公司召回再合并。数值题走两阶段：混合检索找章节，再用「指标 + 表名」锚定查询回主表，例如「合并资产负债表 + 合同负债 + 期末余额」。答案只引用召回块，不调用大模型。</p>
+    </section>
+
+    <section>
+      <h2><span>02</span>结果：数字全对，证据路径不全都漂亮</h2>
+      <ul>
+        <li><b>10/10</b> 题数值正确：8 道单公司题、2 道跨公司全景题。</li>
+        <li><b>7/8</b> 单公司题的金标准页进入问题级 top-12；<b>9/10</b> 题的数值块进入问题级 top-12。</li>
+        <li>跨公司营收前三、归母净利润增速最高/最低全部正确；逐公司召回后 12/12 家都有可比数值。</li>
+      </ul>
+      <p class="small">“答对”与“检索到”不是一回事：q07 的问题级 top-12 没有正确答案所在的 p.62，靠第二阶段才捞回来。</p>
+    </section>
+
+    <section>
+      <h2><span>03</span>答得好：主表 + 明确指标</h2>
+      <p><span class="tag">稳</span>营业总收入、归母净利润、经营现金流、研发投入：公司 + 指标 + 主要会计数据表，一次命中，页码可核（q01/q02/q04/q05/q08）。</p>
+      <p><span class="tag">稳</span>同一张表里的双指标：古井贡酒营收与归母净利润（q06），行定位稳定。</p>
+      <p><span class="tag">稳</span>跨公司排序/极值（q09/q10）：逐公司召回 + 统一口径排序，避免茅台、五粮液霸榜。</p>
+    </section>
+
+    <section>
+      <h2><span>04</span>翻车：同名表、合并/母公司、口径</h2>
+      <ul>
+        <li><b>q07 今世缘合同负债</b>：问题级 top-12 全是附注里的「合同负债 / 期末余额」，没有 p.62 合并资产负债表；锚定查询才返回 15.93 亿元。答案对，路径脆。</li>
+        <li><b>q03 泸州老窖合同负债</b>：先命中 p.25 管理层讨论表，而不是 p.87 合并资产负债表；数值一致，但口径解释依赖表头识别。</li>
+        <li><b>q02 五粮液经营现金流</b>：曾被 p.8 分季度表的 Q1 值 5.16 亿元干扰；系统用「四列季度值 + 无年度表头」规则剔除了它。</li>
+        <li><b>q09 古井贡酒</b>：营业总收入行未命中，回退营业收入口径，已在备注披露。</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2><span>05</span>为什么：表格结构决定上限</h2>
+      <p><b>1. 多行表头 / 空列 / 单位 / 两套报表</b>：年报表格常把表头拆成两三行，合并报表与母公司报表又长得几乎一样。数值题答错，多数不是没找到章节，而是列对齐或报表范围选错。</p>
+      <p><b>2. 向量擅长“哪一页”，不擅长“哪一行”</b>：「合同负债」「期末余额」在几十张表里重复，BM25 与向量都缺少“这是合并主表”的区分度；必须加表名、科目、页码约束。</p>
+      <p><b>3. 全景题不是把 top-k 调大</b>：全局 top-12 会被头部公司占满；逐公司召回 + 统一指标 + 排序，才是可比的全景答案。</p>
+    </section>
+
+    <section>
+      <h2><span>06</span>建库，还是微调？</h2>
+      <table>
+        <tr><th>问题</th><th>选择</th><th>理由</th></tr>
+        <tr><td>单/跨公司数值、同比、排名、占比</td><td><b class="jade">建库</b></td><td>答案在表里，可枚举、可核验；微调不增加事实可靠性</td></tr>
+        <tr><td>口径判断（总收入 vs 收入、合并 vs 母公司）</td><td><b class="jade">建库 + 结构规则</b></td><td>靠表名/报表范围元数据，不靠语言能力</td></tr>
+        <tr><td>“为什么合同负债下降”“预收款说明什么”</td><td><b class="accent">微调 / LLM 推理</b></td><td>需要行业语义、因果链与多步判断；检索只能给证据</td></tr>
+        <tr><td>跨年度战略变化、管理层语气</td><td><b class="accent">微调 + 检索</b></td><td>文本长、信号弱，纯检索召回不稳</td></tr>
+      </table>
+      <div class="callout"><b>一句话：</b>事实题建库，判断题微调；先把口径和表格结构做对，再谈模型。</div>
+    </section>
+
+    <section>
+      <h2><span>07</span>边界</h2>
+      <p class="small">10 道题、12 家公司、单一年份；向量是离线 LSA，不是神经嵌入；表格抽取是启发式，未做 OCR；答案是抽取式，不含生成式归因。结论应视为这套语料与这套题目上的工程判断，不是行业定论。</p>
+    </section>
+  </div>
+
+  <div class="results">
+    <h2><span>08</span>10 题速览</h2>
+    <div class="rgrid">
+      <div class="r"><b>q01 贵州茅台营业总收入</b><span>1741.44 亿元 / +15.66%</span><em>PASS</em></div>
+      <div class="r"><b>q02 五粮液双指标</b><span>归母 318.53 亿 / 现金流 339.40 亿</span><em>PASS</em></div>
+      <div class="r"><b>q03 泸州老窖合同负债</b><span>39.78 亿元 / +48.83%</span><em>PASS</em></div>
+      <div class="r"><b>q04 山西汾酒归母</b><span>122.43 亿元 / +17.29%</span><em>PASS</em></div>
+      <div class="r"><b>q05 洋河研发投入</b><span>1.08 亿元 / -62.85%</span><em>PASS</em></div>
+      <div class="r"><b>q06 古井贡酒双指标</b><span>营收 +16.41% / 归母 +20.22%</span><em>PASS</em></div>
+      <div class="r warn"><b>q07 今世缘合同负债</b><span>15.93 亿元 / -33.65%</span><em>PASS · 检索未进 top-12</em></div>
+      <div class="r"><b>q08 迎驾贡酒归母</b><span>25.89 亿元 / +13.45%</span><em>PASS</em></div>
+      <div class="r"><b>q09 12 家营收前三</b><span>茅台 / 五粮液 / 汾酒</span><em>PASS</em></div>
+      <div class="r"><b>q10 净利润增速极值</b><span>古井 +20.22% / 酒鬼 -97.72%</span><em>PASS</em></div>
+    </div>
+  </div>
+
+  <footer>
+    <span>CORPUS · CNINFO 2024 ANNUAL REPORTS · 12 COMPANIES</span>
+    <span>INDEX · BM25 + CHAR-NGRAM LSA · RRF · TWO-STAGE TABLE LOOKUP</span>
+    <span>EVAL · 10 QUESTIONS · SEE eval/report.md</span>
+  </footer>
+</div>
+</body>
+</html>

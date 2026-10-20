@@ -1,0 +1,11 @@
+﻿id,type,question,correct,answer_status,page_recalled_at_12,fact_in_question_topk,failures
+q01,单公司·单指标,贵州茅台2024年营业总收入是多少？同比增长多少？,True,ok,True,True,
+q02,单公司·双指标,五粮液2024年归母净利润和经营活动现金流净额分别是多少？,True,ok,True,True,
+q03,单公司·资产负债表科目,泸州老窖2024年合同负债期末余额是多少？同比变化多少？,True,ok,True,True,
+q04,单公司·单指标,山西汾酒2024年归母净利润是多少？同比增长多少？,True,ok,True,True,
+q05,单公司·费用明细,洋河股份2024年研发投入合计是多少？同比变化多少？,True,ok,True,True,
+q06,单公司·双指标,古井贡酒2024年营业收入和归母净利润同比增速分别是多少？,True,ok,True,True,
+q07,单公司·资产负债表科目,今世缘2024年合同负债期末余额是多少？同比变化多少？,True,ok,False,False,
+q08,单公司·单指标,迎驾贡酒2024年归母净利润是多少？同比增长多少？,True,ok,True,True,
+q09,跨公司·排序,12家公司2024年营业总收入排名前三的是谁？,True,ok,,True,
+q10,跨公司·极值,哪家公司2024年归母净利润同比增速最高？哪家最低？,True,ok,,True,

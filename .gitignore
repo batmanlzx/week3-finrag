@@ -1,0 +1,10 @@
+.pylibs/
+.vendor/
+.tmp/
+__pycache__/
+*.pyc
+data/raw_pdf/
+data/processed/
+data/index/
+docs/fftest.png
+docs/wvtest.png

@@ -1,0 +1,19 @@
+{
+  "industry": "白酒（A股）",
+  "report_year": 2024,
+  "fiscal_year_label": "2024年年度报告",
+  "companies": [
+    {"code": "600519", "name": "贵州茅台", "short": "茅台", "exchange": "SSE", "aliases": ["贵州茅台", "茅台", "贵州茅台酒股份有限公司"]},
+    {"code": "000858", "name": "五粮液", "short": "五粮液", "exchange": "SZSE", "aliases": ["五粮液", "宜宾五粮液股份有限公司"]},
+    {"code": "000568", "name": "泸州老窖", "short": "泸州老窖", "exchange": "SZSE", "aliases": ["泸州老窖", "泸州老窖股份有限公司"]},
+    {"code": "600809", "name": "山西汾酒", "short": "汾酒", "exchange": "SSE", "aliases": ["山西汾酒", "汾酒", "山西杏花村汾酒厂股份有限公司"]},
+    {"code": "002304", "name": "洋河股份", "short": "洋河", "exchange": "SZSE", "aliases": ["洋河股份", "洋河", "江苏洋河酒厂股份有限公司"]},
+    {"code": "000596", "name": "古井贡酒", "short": "古井贡酒", "exchange": "SZSE", "aliases": ["古井贡酒", "古井", "安徽古井贡酒股份有限公司"]},
+    {"code": "603369", "name": "今世缘", "short": "今世缘", "exchange": "SSE", "aliases": ["今世缘", "江苏今世缘酒业股份有限公司"]},
+    {"code": "603198", "name": "迎驾贡酒", "short": "迎驾贡酒", "exchange": "SSE", "aliases": ["迎驾贡酒", "迎驾", "安徽迎驾贡酒股份有限公司"]},
+    {"code": "603589", "name": "口子窖", "short": "口子窖", "exchange": "SSE", "aliases": ["口子窖", "安徽口子酒业股份有限公司"]},
+    {"code": "600702", "name": "舍得酒业", "short": "舍得", "exchange": "SSE", "aliases": ["舍得酒业", "舍得", "四川舍得酒业股份有限公司"]},
+    {"code": "600779", "name": "水井坊", "short": "水井坊", "exchange": "SSE", "aliases": ["水井坊", "四川水井坊股份有限公司"]},
+    {"code": "000799", "name": "酒鬼酒", "short": "酒鬼酒", "exchange": "SZSE", "aliases": ["酒鬼酒", "酒鬼酒股份有限公司"]}
+  ]
+}

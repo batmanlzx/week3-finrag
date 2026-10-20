@@ -1,0 +1,150 @@
+{
+  "reports": {
+    "600519": {
+      "code": "600519",
+      "name": "贵州茅台",
+      "title": "贵州茅台2024年年度报告",
+      "announcement_url": "https://www.cninfo.com.cn/new/announcement/download?bulletinId=1222993920",
+      "pdf_url": "https://static.cninfo.com.cn/finalpage/2025-04-03/1222993920.PDF",
+      "file": "raw_pdf/600519_贵州茅台_2024_annual.pdf",
+      "bytes": 3626217,
+      "sha256": "5299f4940e2ce4e91084b73dc457d558b9d335fa76fbfee6227e4254eb7f4a30",
+      "announcement_time": "2025-04-02",
+      "fetched_at": "2026-10-17T05:35:51Z"
+    },
+    "000858": {
+      "code": "000858",
+      "name": "五粮液",
+      "title": "2024年年度报告",
+      "announcement_url": "https://www.cninfo.com.cn/new/announcement/download?bulletinId=1223311527",
+      "pdf_url": "https://static.cninfo.com.cn/finalpage/2025-04-26/1223311527.PDF",
+      "file": "raw_pdf/000858_五粮液_2024_annual.pdf",
+      "bytes": 7895552,
+      "sha256": "b737191a758994a35e9442d46847de771fe48b758feb9a7f35601def922435e7",
+      "announcement_time": "2025-04-25",
+      "fetched_at": "2026-10-17T05:35:53Z"
+    },
+    "000568": {
+      "code": "000568",
+      "name": "泸州老窖",
+      "title": "2024年年度报告",
+      "announcement_url": "https://www.cninfo.com.cn/new/announcement/download?bulletinId=1223350383",
+      "pdf_url": "https://static.cninfo.com.cn/finalpage/2025-04-28/1223350383.pdf",
+      "file": "raw_pdf/000568_泸州老窖_2024_annual.pdf",
+      "bytes": 2455650,
+      "sha256": "4c8ab78fac56032945e2ad789fddbc5b6e254251f497eb20c04b73016a03b4de",
+      "announcement_time": "2025-04-27",
+      "fetched_at": "2026-10-17T05:35:55Z"
+    },
+    "600809": {
+      "code": "600809",
+      "name": "山西汾酒",
+      "title": "2024年年度报告",
+      "announcement_url": "https://www.cninfo.com.cn/new/announcement/download?bulletinId=1223414537",
+      "pdf_url": "https://static.cninfo.com.cn/finalpage/2025-04-30/1223414537.PDF",
+      "file": "raw_pdf/600809_山西汾酒_2024_annual.pdf",
+      "bytes": 1244593,
+      "sha256": "78de5a7c9d36eca230c96dce5dbba261747ca9044588dcd7537cc96399888daf",
+      "announcement_time": "2025-04-29",
+      "fetched_at": "2026-10-17T05:35:55Z"
+    },
+    "002304": {
+      "code": "002304",
+      "name": "洋河股份",
+      "title": "2024年年度报告",
+      "announcement_url": "https://www.cninfo.com.cn/new/announcement/download?bulletinId=1223370519",
+      "pdf_url": "https://static.cninfo.com.cn/finalpage/2025-04-29/1223370519.PDF",
+      "file": "raw_pdf/002304_洋河股份_2024_annual.pdf",
+      "bytes": 4699879,
+      "sha256": "436928c6acaac79332794412514d191c7e60451e2c093e91a954aebfbde379a2",
+      "announcement_time": "2025-04-28",
+      "fetched_at": "2026-10-17T05:35:57Z"
+    },
+    "000596": {
+      "code": "000596",
+      "name": "古井贡酒",
+      "title": "2024年年度报告",
+      "announcement_url": "https://www.cninfo.com.cn/new/announcement/download?bulletinId=1223320623",
+      "pdf_url": "https://static.cninfo.com.cn/finalpage/2025-04-28/1223320623.PDF",
+      "file": "raw_pdf/000596_古井贡酒_2024_annual.pdf",
+      "bytes": 4427268,
+      "sha256": "15657fd098bf90d43337fde37536bb492b8372094fae2e07ac5f5da5254618f2",
+      "announcement_time": "2025-04-27",
+      "fetched_at": "2026-10-17T05:35:57Z"
+    },
+    "603369": {
+      "code": "603369",
+      "name": "今世缘",
+      "title": "江苏今世缘酒业股份有限公司2024年年度报告",
+      "announcement_url": "https://www.cninfo.com.cn/new/announcement/download?bulletinId=1223416277",
+      "pdf_url": "https://static.cninfo.com.cn/finalpage/2025-04-30/1223416277.PDF",
+      "file": "raw_pdf/603369_今世缘_2024_annual.pdf",
+      "bytes": 1403668,
+      "sha256": "b42c8bc47bf90836eb87eeef2a715ce9d37572f52db6809c4bed34d6fabb0377",
+      "announcement_time": "2025-04-29",
+      "fetched_at": "2026-10-17T05:35:58Z"
+    },
+    "603198": {
+      "code": "603198",
+      "name": "迎驾贡酒",
+      "title": "安徽迎驾贡酒股份有限公司2024年年度报告",
+      "announcement_url": "https://www.cninfo.com.cn/new/announcement/download?bulletinId=1223377012",
+      "pdf_url": "https://static.cninfo.com.cn/finalpage/2025-04-29/1223377012.PDF",
+      "file": "raw_pdf/603198_迎驾贡酒_2024_annual.pdf",
+      "bytes": 1265442,
+      "sha256": "cf551fdd11a8bc5e5e925646d7bc9f141e844a7165e995911d9cb614a40b4dc2",
+      "announcement_time": "2025-04-28",
+      "fetched_at": "2026-10-17T05:35:58Z"
+    },
+    "603589": {
+      "code": "603589",
+      "name": "口子窖",
+      "title": "安徽口子酒业股份有限公司2024年年度报告",
+      "announcement_url": "https://www.cninfo.com.cn/new/announcement/download?bulletinId=1223370055",
+      "pdf_url": "https://static.cninfo.com.cn/finalpage/2025-04-29/1223370055.PDF",
+      "file": "raw_pdf/603589_口子窖_2024_annual.pdf",
+      "bytes": 1239854,
+      "sha256": "d1259d8ed0139dc9d32a8c5b31741cb6741f5f7efd0230e059271d8d275dfbcc",
+      "announcement_time": "2025-04-28",
+      "fetched_at": "2026-10-17T05:35:59Z"
+    },
+    "600702": {
+      "code": "600702",
+      "name": "舍得酒业",
+      "title": "舍得酒业2024年年度报告",
+      "announcement_url": "https://www.cninfo.com.cn/new/announcement/download?bulletinId=1222869176",
+      "pdf_url": "https://static.cninfo.com.cn/finalpage/2025-03-22/1222869176.PDF",
+      "file": "raw_pdf/600702_舍得酒业_2024_annual.pdf",
+      "bytes": 4366401,
+      "sha256": "7b29f3f5c93f0aa9f3f032a47bc3b71165fe73cc96559d9cfc9033e00946e1a9",
+      "announcement_time": "2025-03-21",
+      "fetched_at": "2026-10-17T05:35:59Z"
+    },
+    "600779": {
+      "code": "600779",
+      "name": "水井坊",
+      "title": "水井坊2024年年度报告",
+      "announcement_url": "https://www.cninfo.com.cn/new/announcement/download?bulletinId=1223414387",
+      "pdf_url": "https://static.cninfo.com.cn/finalpage/2025-04-30/1223414387.PDF",
+      "file": "raw_pdf/600779_水井坊_2024_annual.pdf",
+      "bytes": 1368394,
+      "sha256": "ed676abaaefb33729b1d8dc449ef74f565c2366bfd5326f8781e8bdc85715838",
+      "announcement_time": "2025-04-29",
+      "fetched_at": "2026-10-17T05:36:00Z"
+    },
+    "000799": {
+      "code": "000799",
+      "name": "酒鬼酒",
+      "title": "2024年年度报告",
+      "announcement_url": "https://www.cninfo.com.cn/new/announcement/download?bulletinId=1223367569",
+      "pdf_url": "https://static.cninfo.com.cn/finalpage/2025-04-29/1223367569.PDF",
+      "file": "raw_pdf/000799_酒鬼酒_2024_annual.pdf",
+      "bytes": 2669916,
+      "sha256": "226896c72fdc7690e453592996014da12d6ef7ca18f4da490cd082bf5b480075",
+      "announcement_time": "2025-04-28",
+      "fetched_at": "2026-10-17T05:36:00Z"
+    }
+  },
+  "updated_at": "2026-10-17T05:36:00Z",
+  "count": 12
+}

@@ -1,0 +1,40 @@
+﻿第三周作业 · 方向 A · 白酒财报问答知识库
+
+提交内容：
+  README.md                     项目说明、架构、复现步骤、结论摘要
+  docs/screenshot.png           问答页面截图（12 家公司营业总收入排名）
+  docs/conclusion.pdf           一页结论（A4，1 页）
+  docs/conclusion.png / .md / .html  结论的预览图与源文件
+  eval/report.md                10 题逐题评测：召回块、对错、错在哪
+  eval/questions.json           10 题与金标准
+  eval/results.jsonl / .csv     机器可读的评测结果
+  src/                          download / extract / index / qa / evaluate
+  app.py + templates + static    Flask 问答页面
+  config/companies.json         12 家公司与别名
+  tests/test_smoke.py           冒烟测试（4 项）
+  data/meta/                    年报 manifest（URL/SHA-256）与抽取/索引日志
+
+本包为提交版，未包含（工作区原仓库仍保留）：
+  data/raw_pdf/      12 份 PDF，35 MB
+  data/processed/    抽取后的 6,843 块，25 MB
+  data/index/        BM25 + 向量索引，197 MB
+  .pylibs/ .vendor/  离线依赖，约 240 MB
+
+复现：
+  cd 第三周作业_交付
+  python -m pip install -r requirements.txt
+  python src/download.py
+  python src/extract.py
+  python src/index.py
+  python src/evaluate.py
+  python app.py        # http://127.0.0.1:7860
+
+评测结果：10/10 数值正确；单公司题金标准页进入问题级 top-12 为 7/8；
+          数值块进入问题级 top-12 为 9/10。
+关键脆弱点：q07 今世缘合同负债的问题级检索没有命中 p.62，靠第二阶段
+            指标锚定表格查询才返回 15.93 亿元。
+
+原仓库：C:\Users\86195\Documents\deepseek-harness\default-workspace\week3-finrag
+
+根目录快捷文件：
+  页面截图.png / 一页结论.pdf / 10题逐题评测.md（与 docs、eval 内文件相同）

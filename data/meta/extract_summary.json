@@ -1,0 +1,106 @@
+{
+  "built_at": "2026-10-17T05:42:29Z",
+  "companies": 12,
+  "pages": 2186,
+  "text_chunks": 3229,
+  "table_chunks": 3614,
+  "chars": 3642585,
+  "per_company": [
+    {
+      "code": "600519",
+      "name": "贵州茅台",
+      "pages": 143,
+      "text_chunks": 215,
+      "table_chunks": 292,
+      "chars": 287632
+    },
+    {
+      "code": "000858",
+      "name": "五粮液",
+      "pages": 147,
+      "text_chunks": 243,
+      "table_chunks": 300,
+      "chars": 322443
+    },
+    {
+      "code": "000568",
+      "name": "泸州老窖",
+      "pages": 195,
+      "text_chunks": 322,
+      "table_chunks": 353,
+      "chars": 346274
+    },
+    {
+      "code": "600809",
+      "name": "山西汾酒",
+      "pages": 167,
+      "text_chunks": 241,
+      "table_chunks": 273,
+      "chars": 265119
+    },
+    {
+      "code": "002304",
+      "name": "洋河股份",
+      "pages": 173,
+      "text_chunks": 259,
+      "table_chunks": 346,
+      "chars": 347603
+    },
+    {
+      "code": "000596",
+      "name": "古井贡酒",
+      "pages": 180,
+      "text_chunks": 275,
+      "table_chunks": 319,
+      "chars": 323834
+    },
+    {
+      "code": "603369",
+      "name": "今世缘",
+      "pages": 173,
+      "text_chunks": 259,
+      "table_chunks": 319,
+      "chars": 295056
+    },
+    {
+      "code": "603198",
+      "name": "迎驾贡酒",
+      "pages": 218,
+      "text_chunks": 299,
+      "table_chunks": 286,
+      "chars": 289521
+    },
+    {
+      "code": "603589",
+      "name": "口子窖",
+      "pages": 231,
+      "text_chunks": 303,
+      "table_chunks": 276,
+      "chars": 265967
+    },
+    {
+      "code": "600702",
+      "name": "舍得酒业",
+      "pages": 202,
+      "text_chunks": 318,
+      "table_chunks": 315,
+      "chars": 351281
+    },
+    {
+      "code": "600779",
+      "name": "水井坊",
+      "pages": 205,
+      "text_chunks": 280,
+      "table_chunks": 280,
+      "chars": 271711
+    },
+    {
+      "code": "000799",
+      "name": "酒鬼酒",
+      "pages": 152,
+      "text_chunks": 215,
+      "table_chunks": 255,
+      "chars": 276144
+    }
+  ]
+}

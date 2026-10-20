@@ -1,0 +1,10 @@
+{
+  "built_at": "2026-10-17T06:05:55Z",
+  "chunks": 6843,
+  "companies": 12,
+  "dense_dim": 256,
+  "tfidf_features": 180000,
+  "avg_tokens": 187.39,
+  "tokenizer": "jieba.lcut_for_search + numeric spans",
+  "dense": "char_wb 2-4gram TF-IDF -> TruncatedSVD(256) -> L2"
+}

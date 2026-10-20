@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>白酒财报问答 · 12 家 A 股年报</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='app.css') }}">
+</head>
+<body>
+<div class="grain"></div>
+<header class="topbar">
+  <div class="brand">
+    <span class="brand-mark">F</span>
+    <div>
+      <div class="brand-name">FINRAG <span>/ 财报问答实验室</span></div>
+      <div class="brand-sub">白酒行业 · 2024 年年度报告 · 12 家 A 股上市公司</div>
+    </div>
+  </div>
+  <div class="top-meta">
+    <span class="dot"></span>
+    <span>离线检索 · 不调用大模型</span>
+  </div>
+</header>
+
+<main class="shell">
+  <aside class="sidebar">
+    <section class="side-block">
+      <div class="side-kicker">CORPUS</div>
+      <div class="stat-grid">
+        <div><b>{{ summary.companies or 12 }}</b><span>家公司</span></div>
+        <div><b>{{ summary.pages or '—' }}</b><span>页原文</span></div>
+        <div><b>{{ summary.text_chunks or '—' }}</b><span>文本块</span></div>
+        <div><b>{{ summary.table_chunks or '—' }}</b><span>表格块</span></div>
+      </div>
+      <p class="side-note">上交所 / 深交所 / 巨潮资讯 2024 年报全文；每块带公司、章节、页码。</p>
+    </section>
+
+    <section class="side-block">
+      <div class="side-kicker">RETRIEVAL</div>
+      <div class="formula">
+        <div class="formula-row"><span>BM25</span><div class="bar"><i style="width:45%"></i></div><b>0.45</b></div>
+        <div class="formula-row"><span>向量</span><div class="bar"><i style="width:55%"></i></div><b>0.55</b></div>
+        <div class="formula-row"><span>融合</span><div class="bar bar-alt"><i style="width:100%"></i></div><b>RRF</b></div>
+      </div>
+      <p class="side-note">问题含多家公司时，自动切换「逐公司召回」再合并，避免一家公司霸榜。</p>
+    </section>
+
+    <section class="side-block">
+      <div class="side-kicker">READ THIS</div>
+      <ul class="plain-list">
+        <li>答案只引用召回块中的原文/表格行，不做改写式生成。</li>
+        <li>「已核验」= 抽到了数值并给出页码；「部分覆盖」= 有公司没抽到。</li>
+        <li>点页码或「原文」打开对应 PDF 页，自行复核。</li>
+      </ul>
+    </section>
+
+    <section class="side-block side-foot">
+      <div class="side-kicker">BUILD</div>
+      <p class="mono">{{ index_meta.built_at or '—' }}</p>
+      <p class="mono">dense {{ index_meta.dense_dim or '—' }}d · {{ index_meta.chunks or '—' }} chunks</p>
+    </section>
+  </aside>
+
+  <section class="content">
+    <div class="hero">
+      <div class="eyebrow">WEEK 03 · DIRECTION A</div>
+      <h1>把 12 份年报，<br><em>变成一个能查证的答案。</em></h1>
+      <p class="lede">同一批财报，什么问题该建库？先问数字，再问原因。每个答案都带公司、章节、页码。</p>
+    </div>
+
+    <form class="ask" id="ask-form">
+      <textarea id="question" rows="2" placeholder="例如：12家公司2024年营业总收入排名前三的是谁？">12家公司2024年营业总收入排名前三的是谁？</textarea>
+      <div class="ask-actions">
+        <span class="hint">Enter 提问 · Shift+Enter 换行</span>
+        <button type="submit" id="ask-btn"><span>检索并回答</span><kbd>↵</kbd></button>
+      </div>
+    </form>
+
+    <div class="chips" id="chips">
+      <button type="button" data-q="贵州茅台2024年营业总收入是多少？同比增长多少？">茅台营业总收入</button>
+      <button type="button" data-q="五粮液2024年归母净利润和经营活动现金流净额分别是多少？">五粮液两项指标</button>
+      <button type="button" data-q="泸州老窖2024年合同负债期末余额是多少？">泸州老窖合同负债</button>
+      <button type="button" data-q="12家公司2024年归母净利润排名前三的是谁？">净利润前三</button>
+      <button type="button" data-q="哪家公司2024年归母净利润同比增速最高？">谁增长最快</button>
+    </div>
+
+    <div id="loading" class="loading hidden">
+      <div class="spinner"></div><span>正在检索 BM25 与向量索引，并回到原文核对数值…</span>
+    </div>
+
+    <section id="answer" class="answer hidden">
+      <div class="answer-head">
+        <div class="answer-badges" id="badges"></div>
+        <div class="answer-time" id="time"></div>
+      </div>
+      <div class="headline" id="headline"></div>
+      <div class="spec" id="spec"></div>
+      <div id="table-wrap" class="table-wrap hidden"></div>
+      <div id="fact-path" class="fact-path hidden"></div>
+      <div id="bullets" class="bullets"></div>
+      <div id="notes" class="notes hidden"></div>
+
+      <div class="evidence-head">
+        <h2>召回证据 <span id="ev-count"></span></h2>
+        <div class="evidence-legend">dense / bm25 为该块在两路召回中的名次</div>
+      </div>
+      <div id="evidence" class="evidence"></div>
+    </section>
+
+    <footer class="foot">
+      <span>Corpus: CNINFO 2024 annual reports</span>
+      <span>Index: BM25 + char n-gram LSA · RRF fusion</span>
+      <span>Answers are extractive; verify against the cited page.</span>
+    </footer>
+  </section>
+</main>
+<script src="{{ url_for('static', filename='app.js') }}"></script>
+</body>
+</html>
